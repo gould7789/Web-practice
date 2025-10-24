@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 구성하기_2</title>
+</head>
+<body>
+    <form action="#" method="">
+        <!-- select, option, optgroup -->
+        <fieldset>
+            <legend>개인 정보 입력</legend>
+            <!-- 기본적인 select -->
+            <div>
+                <label for="city">지역</label><br>
+                <select name="city" id="city" size="3"> <!-- size: 항목 표시, 지금은 3개 표시-->
+                    <optgroup label="서울시">
+                        <option value="강북구">강북구</option>
+                        <option value="강남구">강남구</option>
+                        <option value="서초구">서초구</option>
+                    </optgroup>
+                    <optgroup label="경기도 성남시">
+                        <option value="중원구">중원구</option>
+                        <option value="분당구">분당구</option>
+                    </optgroup>
+                </select>
+            </div>
+            
+            <br>
+
+            <!-- multiple 속성: Ctrl을 누른 상태로 다중 선택 지원 -->
+            <div>
+                <label for="city">지역_multiple 속성</label><br>
+                <select name="city" id="city" multiple>
+                    <option value="강북구">강북구</option>
+                    <option value="강남구">강남구</option>
+                    <option value="서초구">서초구</option>
+                    <option value="중원구">중원구</option>
+                    <option value="분당구">분당구</option>
+                </select>
+            </div>
+
+            <br>
+
+            <!-- selected 속성: 기본 선택 항목을 지정 -->
+            <div>
+                <label for="city">지역_selected 속성</label><br>
+                <select name="city" id="city">
+                    <option value="강북구">강북구</option>
+                    <option value="강남구">강남구</option>
+                    <option value="서초구" selected>서초구</option>
+                    <option value="중원구">중원구</option>
+                    <option value="분당구">분당구</option>
+                </select>
+            </div>
+
+            <br>
+
+            <!-- button 태그: 별도의 type 속성을 가짐 -->
+            <!-- submit: 폼을 서버에 전송, reset: 입력된 내용을 초기화, button: 단순 버튼 -->
+            <div>
+                <label for="button">button 태그로 버튼 생성</label><br>
+                <button type="submit" name="button" id="button">
+                    <img src="../images/insta.jpg" alt="인스타그램 버튼" width="40" height="40">
+                    인스타 등록하기
+                </button>
+            </div>
+        </fieldset>
+
+        <br>
+
+        <!-- 폼 관련 별도 추가 속성 -->
+        <fieldset>
+            <legend>폼 관련 별도 추가 속성</legend>
+            <!-- disabled: 상호작용 요소 비활성화 -->
+            <div>
+                <label>disabled 속성</label><br>
+                <input type="text" disabled>
+                <button type="button" disabled>비활성</button>
+            </div>
+
+            <br>
+
+            <!-- readonly: 상호작용 요소를 읽기전용으로 변경 -->
+            <div>
+                <label>readonly 속성</label><br>
+                <input type="text" value="읽기 전용" readonly>
+            </div>
+
+            <br>
+
+            <!-- maxlength: 입력할 수 있는 글자 수 제한 -->
+            <div>
+                <label>maxlength 속성</label><br>
+                <input type="text" maxlength="4"><br>
+                <textarea maxlength="4"></textarea>
+            </div>
+
+            <br>
+
+            <!-- checked: 요소를 선택된 상태로 표시 -->
+            <div>
+                <label>checked 속성</label><br>
+                <input type="checkbox" id="banana" name="banana" value="banana">
+                <label for="banana">banana</label><br>
+                <input type="checkbox" id="apple" name="apple" value="apple">
+                <label for="apple">apple</label><br>
+                <input type="checkbox" name="orange" id="orange" value="orange" checked>
+                <label for="orange">orange</label>
+            </div>
+
+            <br>
+
+            <!-- placeholder: 입력 요소에 어떠한 값을 넣어야하는지 힌트 제공 -->
+            <div>
+                <label>placeholder 속성</label><br>
+                <input type="tel" placeholder="전화번호를 입력해주세요">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
