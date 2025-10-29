@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시맨틱 태그 기본 구조</title>
+    <style>
+        /* CSS를 사용해 시각적으로 구조를 구분 */
+        body {font-family: Arial, sans-serif; margin: 0; padding: 0;}
+        header, nav, main, aside, footer {padding: 15px; margin-bottom: 10px; border-radius: 5px;}
+        header {background-color: #3498db; color: white;}
+        nav {background-color: #2ecc71;}
+        main {background-color: #ecf0f1; display: flex;}
+        article {flex: 3; background-color: #ffffff; padding: 20px; border: 1px solid #bdc3c7; color: #333;}
+        aside {flex: 1; margin-left: 10px; background-color: #f1c40f;}
+        footer {background-color: #95a5a6; color: white; text-align: center;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>나의 시멘틱 웹 사이트</h1>
+        <p>시맨틱 태그를 사용하여 구조를 만들어보자</p>
+
+        <nav>
+            <ul>
+                <li><a href="#">홈</a></li>
+                <li><a href="#">소개</a></li>
+                <li><a href="#">서비스</a></li>
+                <li><a href="#">문의</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <article>
+                <h2>블로그 기사 제목</h2>
+                <p>이 내용은 기사 본문으로, 웹 사이트의 다른 부분 없이도 의미가 통하는 독립적인 정보</p>
+                <scetion>
+                    <h3>섹션: 배경 정보</h3>
+                    <p>배경 정보를 담고 있는 주제별 그룹</p>
+                </scetion>
+            </article>
+
+            <aside>
+                <h3>관련 정보</h3>
+                <p>이곳에는 최근 인기 글이나 광고 등 주요 내용과 보조적인 정보를 배치</p>
+            </aside>
+        </main>
+
+        <footer>
+            <p>Copyright &copy; 2025 시맨틱 웹 페이지 학습</p>
+        </footer>
+    </header>
+</body>
+</html>
