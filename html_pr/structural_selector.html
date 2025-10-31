@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조적 가상 클래스 선택자</title>
+    <link rel="stylesheet" href="../css_pr/structural_selector.css">
+</head>
+<body>
+    <!-- :first-child, :last-child -->
+    <ol>
+        <li>첫 번째 리스트</li>
+        <li>두 번째 리스트</li>
+        <li>세 번째 리스트</li>
+    </ol>
+
+    <!-- :nth-child(n), :nth-last-child(n) -->
+    <p>첫 번째 요소</p>
+    <div>
+        <p>첫 번째 요소</p>
+        <p>두 번째 요소</p>
+    </div>
+    <div>
+        <p>첫 번째 요소</p>
+        <p>두 번째 요소</p>
+    </div>
+
+    <!-- :nth-of-type(n), :nth-last-of-type(n) -->
+    <p>첫 번째 요소</p>
+    <div>
+        <p>첫 번째 요소</p>
+        <span>span 1</span>
+        <span>span 2</span>
+        <p>두 번째 요소</p>
+    </div>
+    <div>
+        <p>세 번째 요소</p>
+        <span>span 3</span>
+        <span>span 4</span>
+        <p>네 번째 요소</p>
+    </div>
+
+    <!-- :first-of-type, :last-of-type -->
+    <span>span 0</span>
+    <p>첫 번째 요소</p>
+    <div>
+        <span>span 1</span>
+        <p>두 번째 요소</p>
+        <p>세 번째 요소</p>
+    </div>
+    <span>span 2</span>
+    <span>span 3</span>
+    <p>네 번째 요소</p>
+    <p>다섯 번째 요소</p>
+</body>
+</html>
