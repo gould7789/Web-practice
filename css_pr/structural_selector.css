@@ -1,0 +1,39 @@
+/* :first-child, :last-child */
+li:first-child {
+    color: red;
+}
+li:last-child {
+    color: red;
+}
+
+/* :nth-child(n) */
+p:nth-child(1) {
+    color: red;
+}
+
+/* :nth-of-type(n) */
+p:nth-of-type(2) {
+    color: blue;
+}
+
+/* :first-of-type */
+p:first-of-type {
+    color: blueviolet;
+}
+
+/* 다양한 선택자 조합하기 */
+
+/* class 속성값이 box인 div 태그*/
+div.box{} 
+
+/* id 속성값이 main인 section 태그 */
+section#main{}
+
+/* id 속성값이 main이고, class 속성값이 box인 요소 */
+#mian.box{}
+
+/* div 태그에 마우스를 올린(hover) 상태일 때, 해당 div 태그 하위에 있는 button 태그 선택 */
+div:hover button{}
+
+/* div 태그에 마우스를 올린(hover) 상태일 때, 해당 div 태그와 자식 관계에 있는 button 태그 선택 */
+div:hover > button{}
