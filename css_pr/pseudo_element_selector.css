@@ -1,0 +1,47 @@
+/* 가상 요소 선택자 */
+p::before {
+    content: '<before>';
+    color: red;
+}
+p::after {
+    content: '<after>';
+}
+
+/* 링크 가상 클래스 선택자 */
+a:link {
+    color: orange;
+}
+a:visited {
+    color: green;
+}
+
+/* 동적 가상 클래스 선택자 */
+div:hover {
+    color: red;
+}
+button:active {
+    color: red;
+}
+
+/* 입력 요소 가상 클래스 선택자 */
+/* 1. :focus */
+input:focus {
+    color: red;
+}
+
+/* 2. :checked */
+input:checked + label {
+    color: red;
+}
+
+/* 3. :disabled */
+input:disabled,
+button:disabled {
+    background-color: #ccc;
+}
+
+/* 4. :enabled */
+input:enabled,
+button:enabled {
+    background-color: #ccc;
+}
