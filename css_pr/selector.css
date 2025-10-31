@@ -1,0 +1,29 @@
+/* 전체 선택자 */
+*{
+    color: red;
+}
+
+/* 태그 선택자 */
+dd {
+    color: blue;
+}
+
+/* 아이디 선택자 */
+#title {
+    color: green;
+}
+
+/* 클래스 선택자 */
+.yellow {
+    color: yellow;
+}
+
+/* 기본 속성 선택자 */
+a[href] {
+    color: purple;
+    display: block;
+}
+a[target="_blank"] {
+    color: brown;
+    display: block;
+}
