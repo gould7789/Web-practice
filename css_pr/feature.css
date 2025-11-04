@@ -1,0 +1,30 @@
+/* RGB값을 이용한 색상 설정 방법 */
+h1 {
+    color: #0000ff;
+}
+
+h2{
+    color: #00ff00;
+}
+
+p {
+    /* 글꼴 지정 */
+    font-family: BatangChe, "Times New Roman";
+
+    /* 글의 굵기 */
+    font-weight: s;
+
+    /* 문자 정렬 */
+    text-align: justify;
+
+    /* 자간 조절 */
+    letter-spacing: 4px;
+
+    /* 텍스트 한 줄의 높이 지정 */
+    line-height: normal;
+}
+
+/* 영문 텍스트를 크기가 작은 대문자로 변경 */
+.variant {
+    font-variant: small-caps;
+}
