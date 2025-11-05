@@ -1,0 +1,43 @@
+p {
+    /* 속성값이 2개이므로 공백을 기준으로 첫 번째는 위쪽과 아래쪽 */
+    /* 두 번째는 왼쪽과 오른쪽의 margin 값이 됨 */
+    margin: 10px 20px;
+}
+
+.first {
+    margin-bottom: 20px;
+}
+
+.second {
+    margin-top: 30px;
+}
+
+.border {
+    border-style: outset;
+    margin-bottom: 10px;
+    border-width: 2px;
+    border-color: red;
+}
+
+/* 순서대로 width style color 지정 가능 */
+h2 {
+    border: 1px solid blue;
+}
+/* 방향을 지정하여 적용 가능 */
+h3 {
+    border-bottom: 2px dotted black;
+}
+
+.padding {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+div {
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    padding-top: 25px;
+    padding-left: 8px;
+    margin: auto;
+}
