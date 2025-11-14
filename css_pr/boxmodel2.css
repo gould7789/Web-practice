@@ -1,0 +1,43 @@
+.parent {
+    background-color: yellowgreen;
+    width: 1000px;
+    height: 100px;
+}
+
+.child {
+    background-color: salmon;
+    width: 500px;
+    height: 70px;
+}
+
+.margin-1 {
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+.margin-2 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.margin-3 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+h1 {
+    width: 200px;
+    background-color: yellowgreen;
+}
+
+div {
+    background-color: salmon;
+}
