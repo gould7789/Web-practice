@@ -1,0 +1,50 @@
+:root {
+    --color-angry : #E52258;
+    --sall: 0.5rem;
+}
+
+h3 {
+    color: white;
+}
+
+/* 상자 안의 그림과 문자를 중앙에 표시 되도록 설정 */
+.box {
+    width: 100px;
+    height: 100px;
+    padding: var(--sall);
+    margin: var(--sall);
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.angry {
+    background-color: var(--color-angry);
+}
+
+.bad {
+    background-color: darkblue;
+}
+
+.sad {
+    background-color: skyblue;
+}
+
+.happy {
+    background-color: darkorange;
+}
+
+.disgusted {
+    background-color: olive;
+}
+
+.surprised {
+    background-color: palegoldenrod;
+}
+
+.box:hover {
+    background-color: darkgray;
+}
