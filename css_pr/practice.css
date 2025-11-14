@@ -1,0 +1,21 @@
+:root {
+    --color-sky: #D3EEFE;
+    --color-commander: pink;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    background-color: var(--color-sky);
+}
+
+.commander {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--color-commander);
+}
