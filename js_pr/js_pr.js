@@ -42,3 +42,7 @@ let studentScore = {
 };
 console.log(studentScore.koreanScore);
 console.log(studentScore['englishScore']);
+
+// alert: 브라우저 화면 중앙에 팝업창을 띄워 사용자가 확인 버튼을 누르기 전까지 아무것도 못하게 막음
+alert("이것은 alert입니다.")
+alert("두 번째") // 두 번째 팝업창이 나옴
